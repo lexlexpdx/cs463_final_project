@@ -26,6 +26,9 @@ body {
 		rgba(81, 53, 90, 1) 0%,
 		rgba(59, 77, 84, 1) 100%
 	);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
@@ -42,9 +45,9 @@ NAVIGATION STYLES
 	align-items: center;
 	justify-content: center;
 	height: 80px;
-	width: 100%;
+	width: 100vw;
 	position: sticky;
-	top: 0;
+	margin-top: 0;
 	background: transparent;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(5px);
@@ -57,11 +60,10 @@ NAVIGATION STYLES
 	justify-content: space-between;
 	width: 100%;
 	padding: 0 2rem;
-	max-width: 1600px;
 }
 
 .navbar-logo {
-	text-shadow: 1px 1px 2px var(--text-secondary);
+	text-shadow: 1px 1px 2px var(--black);
 	font-size: 2rem;
 	font-weight: 600;
 	color: var(--text-primary);
@@ -78,7 +80,7 @@ NAVIGATION STYLES
 
 .navbar-container .navbar-menu li a {
 	text-decoration: none;
-	text-shadow: 1px 1px 2px var(--text-secondary);
+	text-shadow: 1px 1px 2px var(--black);
 	color: var(--text-primary);
 	font-size: 1.3rem;
 	font-weight: 500;
@@ -124,13 +126,12 @@ SECTION STYLES
 
 section.about {
 	display: grid;
-	grid-template-columns: 300px 1fr;
-	grid-template-rows: 1fr;
+	/* background: var(--primary-light); */
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1;
 	gap: 2rem;
-	padding: 4rem 2rem;
-	max-width: 1200px;
-	margin: 0 auto;
-	position: relative;
+	max-width: 100vw;
+	margin: 0;
 	align-items: start;
 }
 
@@ -140,8 +141,7 @@ section.about {
 	width: 300px;
 	height: 400px;
 	overflow: hidden;
-	margin: 2rem auto;
-	justify-self: center;
+	margin: 2rem;
 }
 
 .headshot-container img {
@@ -155,20 +155,26 @@ section.about {
 	grid-column: 1 / 3;
 	grid-row: 1;
 	border: 3px solid var(--primary-contrast);
-	margin-left: 20px;
-	margin-top: 50px;
-	width: 900px;
+	margin-left: 3.5rem;
+	margin-top: 3.5rem;
+	max-width: 90vw;
+	width: 970px;
 	height: 400px;
 }
 
 .about-text {
-	grid-column: 2;
-	grid-row: 2;
-	margin-top: -450px;
+	grid-column: 1 / 3;
+	grid-row: 1;
 	color: var(--text-primary);
-	width: 550px;
-	gap: 2rem;
+	margin-left: 23rem;
+	margin-top: 3.5rem;
+	width: 700px;
+	max-width: 50vw;
 	text-wrap: auto;
+}
+
+.about-text h2 {
+	text-shadow: 1px 1px 2px var(--black);
 }
 
 /* Previous Work */
@@ -201,7 +207,7 @@ RESPONSIVE STYLES
 		align-items: flex-start;
 		gap: 1.7rem !important;
 		position: absolute;
-		height: 100vh;
+		height: 18vh;
 		top: 0;
 		right: 0;
 		padding: 5rem 1.5rem;
