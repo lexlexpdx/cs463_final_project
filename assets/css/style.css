@@ -10,7 +10,7 @@
 /**
 Sources:
 - Backgound gradient: https://cssgradient.io/
-- Navbar Tutorial: https://www.youtube.com/watch?v=Og-YEeCTE7A
+- navbar-site Tutorial: https://www.youtube.com/watch?v=Og-YEeCTE7A
 */
 
 /*
@@ -40,7 +40,7 @@ NAVIGATION STYLES
 =============================================
 */
 
-.navbar {
+.navbar-site {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,7 +54,7 @@ NAVIGATION STYLES
 	z-index: 999;
 }
 
-.navbar-container {
+.navbar-site-container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -62,7 +62,7 @@ NAVIGATION STYLES
 	padding: 0 2rem;
 }
 
-.navbar-logo {
+.navbar-site-logo {
 	text-shadow: 1px 1px 2px var(--black);
 	font-size: 2rem;
 	font-weight: 600;
@@ -71,14 +71,14 @@ NAVIGATION STYLES
 	cursor: pointer;
 }
 
-.navbar-container .navbar-menu {
+.navbar-site-container .navbar-site-menu {
 	display: flex;
 	text-align: center;
 	gap: 1.5rem;
 	list-style: none;
 }
 
-.navbar-container .navbar-menu li a {
+.navbar-site-container .navbar-site-menu li a {
 	text-decoration: none;
 	text-shadow: 1px 1px 2px var(--black);
 	color: var(--text-primary);
@@ -91,15 +91,15 @@ NAVIGATION STYLES
 	white-space: nowrap;
 }
 
-.navbar-container .navbar-menu li a:hover,
-.navbar-container .navbar-menu li a.active {
+.navbar-site-container .navbar-site-menu li a:hover,
+.navbar-site-container .navbar-site-menu li a.active {
 	color: var(--primary-dark);
 	text-shadow: none;
 	background: var(--primary-contrast);
 	border: 2px solid var(--white);
 }
 
-.navbar-toggle {
+.navbar-site-toggle {
 	display: none;
 	background: transparent;
 	padding: 10px;
@@ -180,6 +180,7 @@ section.about {
 /* skills */
 .skills {
 	color: var(--text-primary);
+	margin-top: 2rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
 }
@@ -191,6 +192,7 @@ section.about {
 
 /* Accordion */
 .accordion-container {
+	margin-top: 2rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
 }
@@ -198,6 +200,9 @@ section.about {
 /* Projects */
 .projects {
 	color: var(--text-primary);
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .projects h2 {
@@ -208,6 +213,9 @@ section.about {
 /* Contact */
 .contact {
 	color: var(--text-primary);
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .contact h2 {
@@ -222,56 +230,58 @@ RESPONSIVE STYLES
 */
 
 @media (max-width: 880px) {
-	.navbar {
+	.navbar-site {
 		backdrop-filter: blur(10px);
+		position: sticky;
+		top: 0;
 	}
 
-	.navbar-container .navbar-menu {
+	.navbar-site-container .navbar-site-menu {
 		display: none;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 1.7rem !important;
 		position: absolute;
-		height: 18vh;
 		top: 0;
 		right: 0;
 		padding: 5rem 1.5rem;
+		background: rgba(255, 255, 255, 0.2);
 		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(10px);
 	}
 
-	.navbar-container .navbar-menu.active {
+	.navbar-site-container .navbar-site-menu.active {
 		display: flex;
 	}
 
-	.navbar-toggle {
+	.navbar-site-toggle {
 		display: block;
 		z-index: 999;
 	}
 
-	.navbar-toggle.active .bar:nth-child(2) {
+	.navbar-site-toggle.active .bar:nth-child(2) {
 		opacity: 0;
 	}
 
-	.navbar-toggle.active .bar:nth-child(1) {
+	.navbar-site-toggle.active .bar:nth-child(1) {
 		transform: translateY(8px) rotate(45deg);
 	}
 
-	.navbar-toggle.active .bar:nth-child(3) {
+	.navbar-site-toggle.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
 }
 
 @media (max-width: 480px) {
-	.navbar-container {
+	.navbar-site-container {
 		padding: 0 1rem;
 	}
 
-	.navbar-logo {
+	.navbar-site-logo {
 		font-size: 1.7rem;
 	}
 
-	.navbar-container .navbar-menu li a {
+	.navbar-site-container .navbar-menu li a {
 		font-size: 1.2rem;
 		padding: 3px 15px;
 	}
