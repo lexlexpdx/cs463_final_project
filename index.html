@@ -29,13 +29,19 @@
 		<nav class="navbar-site">
 			<section class="navbar-site-container">
 				<a href="index.html" class="navbar-site-logo">Lex Albrandt</a>
-				<button class="navbar-site-toggle">
+				<button
+					class="navbar-site-toggle"
+					type="button"
+					aria-label="Open navigation menu"
+					aria-expanded="false"
+					aria-controls="primary-navigation"
+				>
 					<span class="bar"></span>
 					<span class="bar"></span>
 					<span class="bar"></span>
 				</button>
-				<ul class="navbar-site-menu">
-					<li><a href="#about-section" class="active">About</a></li>
+				<ul class="navbar-site-menu" id="primary-navigation">
+					<li><a href="#about-section">About</a></li>
 					<li><a href="#skill-set">Skills</a></li>
 					<li><a href="#past-projects">Projects</a></li>
 					<li><a href="#contact-me">Contact</a></li>
@@ -52,7 +58,7 @@
 				</div>
 				<div class="accent-box"></div>
 				<div class="about-text">
-					<h2>About Me</h2>
+					<h1>About Me</h1>
 					<p>
 						Hello! My name is Lex (he/him), and I am a Senior majoring in
 						Computer Science at Portland State University. I decided to make a
@@ -90,7 +96,7 @@
 								aria-expanded="true"
 								aria-controls="collapseOne"
 							>
-								Accordion Item #1
+								Programming Languages
 							</button>
 						</h2>
 						<div
@@ -99,15 +105,23 @@
 							data-bs-parent="#accordionExample"
 						>
 							<div class="accordion-body">
-								<strong>This is the first item’s accordion body.</strong> It is
-								shown by default, until the collapse plugin adds the appropriate
-								classes that we use to style each element. These classes control
-								the overall appearance, as well as the showing and hiding via
-								CSS transitions. You can modify any of this with custom CSS or
-								overriding our default variables. It’s also worth noting that
-								just about any HTML can go within the
-								<code>.accordion-body</code>, though the transition does limit
-								overflow.
+								<strong>Python</strong>
+								<ul>
+									<li>Tensorflow</li>
+									<li>Pytorch</li>
+									<li>Keras</li>
+									<li>Pandas</li>
+									<li>Numpy</li>
+									<li>Matplotlib</li>
+								</ul>
+								<strong>C++ / C</strong><br />
+								<ul>
+									<li>Object Oriented Programming</li>
+									<li>Systems-level programming</li>
+								</ul>
+								<strong>JavaScript</strong><br />
+								<strong>HTML</strong><br />
+								<strong>CSS</strong><br />
 							</div>
 						</div>
 					</div>
@@ -121,7 +135,7 @@
 								aria-expanded="false"
 								aria-controls="collapseTwo"
 							>
-								Accordion Item #2
+								PSU Classes
 							</button>
 						</h2>
 						<div
@@ -152,7 +166,7 @@
 								aria-expanded="false"
 								aria-controls="collapseThree"
 							>
-								Accordion Item #3
+								Specific Areas of Interest
 							</button>
 						</h2>
 						<div
@@ -161,15 +175,11 @@
 							data-bs-parent="#accordionExample"
 						>
 							<div class="accordion-body">
-								<strong>This is the third item’s accordion body.</strong> It is
-								hidden by default, until the collapse plugin adds the
-								appropriate classes that we use to style each element. These
-								classes control the overall appearance, as well as the showing
-								and hiding via CSS transitions. You can modify any of this with
-								custom CSS or overriding our default variables. It’s also worth
-								noting that just about any HTML can go within the
-								<code>.accordion-body</code>, though the transition does limit
-								overflow.
+								<ul>
+									<li>Computational Theory</li>
+									<li>Machine Learning</li>
+									<li>Deep Learning and Neural Networks</li>
+								</ul>
 							</div>
 						</div>
 					</div>
