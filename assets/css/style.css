@@ -273,20 +273,29 @@ section.about {
 	color: var(--text-secondary);
 }
 
-.project-link {
+.project-link,
+.form-section button[type="submit"] {
 	display: inline-block;
-	margin-left: 1rem;
+	/* margin-left: 1rem; */
 	text-decoration: none;
-	color: var(--text-secondary);
-	font-size: 1.2rem;
+	font: inherit;
+	/* color: var(--text-secondary); */
+	/* font-size: 1.2rem; */
 	transition: all 0.7s ease;
-	border: 1px solid transparent var(--white);
+	border: 2px solid var(--white);
 	border-radius: 20px;
 	padding: 3px 20px;
 }
 
-.project-link:hover {
-	color: var(--primary-dark);
+.project-link {
+	margin-left: 1rem;
+	color: var(--text-secondary);
+	font-size: 1.2rem;
+}
+
+.project-link:hover,
+.form-section button[type="submit"]:hover {
+	color: var(--text-secondary);
 	background: var(--primary-light);
 	border: 2px solid var(--white);
 }
@@ -337,10 +346,13 @@ section.about {
 
 .form-section button {
 	justify-self: start;
-	background: var(--primary-light);
-	opacity: 0.5;
+	color: var(--text-primary);
+	background: transparent;
+	font-size: 1.2rem;
+	border: 2px solid var(--black);
 	border-radius: 5px;
 	font-weight: 550;
+	cursor: pointer;
 }
 
 /*
