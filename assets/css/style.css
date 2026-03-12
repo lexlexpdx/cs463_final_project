@@ -202,13 +202,14 @@ section.about {
 
 /* Accordion */
 .accordion-container {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
 }
 
 .accordion-button {
 	background: var(--primary-contrast);
+	font-weight: 800;
 }
 
 .accordion-button:not(.collapsed) {
@@ -220,10 +221,18 @@ section.about {
 	justify-content: space-evenly;
 }
 
+.classes-1 {
+	width: 300px;
+}
+
+.classes-2 {
+	width: 300px;
+}
+
 .classes-1 h3,
 .classes-2 h3 {
 	font-weight: 800;
-	text-align: center;
+	font-size: 1rem;
 }
 
 /* Projects */
