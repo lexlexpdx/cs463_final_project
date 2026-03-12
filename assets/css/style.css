@@ -276,6 +276,19 @@ section.about {
 .project-link {
 	display: inline-block;
 	margin-left: 1rem;
+	text-decoration: none;
+	color: var(--text-secondary);
+	font-size: 1.2rem;
+	transition: all 0.7s ease;
+	border: 1px solid transparent var(--white);
+	border-radius: 20px;
+	padding: 3px 20px;
+}
+
+.project-link:hover {
+	color: var(--primary-dark);
+	background: var(--primary-light);
+	border: 2px solid var(--white);
 }
 
 /* Contact */
