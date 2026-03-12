@@ -41,7 +41,7 @@
 					<span class="bar"></span>
 				</button>
 				<ul class="navbar-site-menu" id="primary-navigation">
-					<li><a href="#about-section">About</a></li>
+					<li><a href="#">About</a></li>
 					<li><a href="#skill-set">Skills</a></li>
 					<li><a href="#past-projects">Projects</a></li>
 					<li><a href="#contact-me">Contact</a></li>
@@ -194,21 +194,56 @@
 			</div>
 			<section class="projects" id="past-projects">
 				<h2>Projects</h2>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
-					adipisci natus. Dolore veniam similique, recusandae porro itaque
-					corrupti, consectetur modi ullam reprehenderit quibusdam rerum optio
-					unde dolores tenetur quis esse.
-				</p>
+				<div class="project-container">
+					<article class="project-card">
+						<h3 class="project-title">
+							PVC detection with Convolutional Neural Network
+						</h3>
+						<p class="project-desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, id
+							perferendis quaerat illo expedita voluptatibus minus cupiditate
+							pariatur? Repellat eaque doloremque labore quisquam maiores
+							nostrum eligendi ipsa laudantium ducimus deserunt.
+						</p>
+						<a class="project-link" href="#"> view repository </a>
+					</article>
+					<article class="project-card">
+						<h3 class="project-title">DnD Dice Checker</h3>
+						<p class="project-desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, id
+							perferendis quaerat illo expedita voluptatibus minus cupiditate
+							pariatur? Repellat eaque doloremque labore quisquam maiores
+							nostrum eligendi ipsa laudantium ducimus deserunt.
+						</p>
+						<a class="project-link" href="#"> view repository </a>
+					</article>
+				</div>
 			</section>
 			<section class="contact" id="contact-me">
-				<h2>Contact</h2>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
-					adipisci natus. Dolore veniam similique, recusandae porro itaque
-					corrupti, consectetur modi ullam reprehenderit quibusdam rerum optio
-					unde dolores tenetur quis esse.
-				</p>
+				<article class="contact-container">
+					<h2>Contact Me</h2>
+					<form action="#" method="post">
+						<div class="form-section">
+							<label class="form-label" for="name">Name</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-section">
+							<label class="form-label" for="email">Email</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+						<div class="form-section">
+							<label class="form-label" for="company">Company</label>
+							<input type="text" id="company" name="company" required />
+						</div>
+						<div class="form-section">
+							<label class="form-label" for="phone">Phone Number</label>
+							<input type="tel" id="phone" name="phone" required />
+						</div>
+						<div class="form-section">
+							<button type="submit">Submit</button>
+						</div>
+					</form>
+				</article>
 			</section>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
