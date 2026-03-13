@@ -148,7 +148,6 @@ SECTION STYLES
 
 .about-text {
 	color: var(--text-primary);
-	margin-top: 2rem;
 	margin-right: 3rem;
 	flex: 1 1 0;
 	text-wrap: auto;
@@ -291,6 +290,7 @@ SECTION STYLES
 	display: grid;
 	gap: 1rem;
 	margin-bottom: 2rem;
+	max-width: 500px;
 }
 
 .form-section {
@@ -352,7 +352,8 @@ RESPONSIVE STYLES
 		top: 0;
 		right: 0;
 		padding: 5rem 1.5rem;
-		background: rgba(255, 255, 255, 0.2);
+		background: var(--primary-color);
+		opacity: 0.8;
 		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(10px);
 	}
@@ -378,10 +379,12 @@ RESPONSIVE STYLES
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
+	/* Contact */
 	.contact-container form {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	/* About */
 	.about-text {
 		text-wrap: auto;
 	}
