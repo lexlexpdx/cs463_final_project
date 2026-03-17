@@ -1,5 +1,9 @@
 # CS463 Final Project - Progress Journal
 
+# Github Repository:
+
+https://github.com/lexlexpdx/cs463_final_project/tree/main
+
 ## Day one
 
 Day one consisted largely of setting up the structural elements of the project and making an initial plan for which tasks to be begin first. I am using the "Projects" functionality on the GitHub website with a simple Kanban board for tracking progress and adding new to-do items for the project. The following structures were implemented on day one:
