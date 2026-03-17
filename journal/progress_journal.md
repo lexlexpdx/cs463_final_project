@@ -30,6 +30,7 @@ I had seen this concept used in our lab notebooks, and I really appreciate using
 
 ### Styles.css intialization
 
+best way to record a video with application in background discord
 This was a barebones implementation of the css styling to begin the day, and was expanded as I added the navbar functionality and began work on the "About" section. I am still quite new to this, so I'm learning as I progress, and will have to clean up some code later for readibility, but at present my primary goal is functionality.
 
 ### Navbar initialization
@@ -41,3 +42,28 @@ This was the part of the project that took up the majority of my work time on da
 This portion was barebones to start: I mostly wanted to just get them on the page, but I did begin some more serious work on the "About" section. While the navbar was done mostly using a tutorial, I wanted this section to focus on using mostly MDN documnentation and small snippets of tutorials, rather than a tutorial for a full element of the page. I got some time working on using CSS grid. It took a lot of work and fiddling (scientific term) to get overlapping to work correctly, but so far I am happy with the result and the effort.
 
 Overall, the first day, which amounted to about 5 hours of work, made a lot of good progress. I feel there will be a lot of adjustments for the overall project, but I am pleased with the beginning structure.
+
+### Day two
+
+Day two was spent fixing the "about" section. At this point I still had the idea that I wanted to do an image with and text with an accent box, so I switched to using a grid layout so I could overlay the accent box over the picture and around the text. I spent a fair amount of time trying to get this to look how I wanted it, and struggled a lot with how to adjust for responsiveness. Spoiler alert: I ended up taking it out a while later.
+
+I also spent some time on this day updating the readme and journal entries.
+
+### Day three
+
+This was another big day of coding. I started out having to debug some problems with how the navbar looked. I had initially had it styled to that it had a "glass" appearance, and for some unknown reason that stopped working. I tried a number of different things, but eventually found that adding a semi-transparent background helped fix the problem. I also tried to add the image carousel from bootstrap, but had a ton of trouble trying to style it in a way that fit with the theme of the website, so I changed to an accordion instead, which worked much better.
+
+After adding the accordion I again had trouble with the navbar styling, I think it was something in the bootstrap CSS that was potentially overriding styles I had, so I re-named the navbar classes to avoid that, and the problems disappeared. Overall, I found working with the accordion and styling it to be much easier than the image carousel. I felt like it melded well with my ideas for the skill section.
+
+### Day four
+
+This was, again, another big day of coding and finishing up the website. Most of the big style choices and responsiveness had been taken care of at this point. I did decide to get rid of the accent box in the About section, which made it much easier to adjust responsiveness. I also added the Contact form, and JavaScript functionality to go along with it.
+
+I used a couple of sources for regex in the JavaScript, as listed below:
+
+- email validation regex: https://www.geeksforgeeks.org/javascript/javascript-program-to-validate-an-email-address/
+- phone validation regex: https://www.geeksforgeeks.org/javascript/how-to-validate-phone-numbers-using-javascript/
+
+### Final thoughts
+
+I noticed after I had "finished" that there was a small problem with some overflow on the projects section, but honestly, at this point I have run out of time. I have other finals and projects that need my attention. If this was a work project, that would be my very next fix. Additionally, there may be some sections where my CSS could be more efficient, but I ran out of time to refactor. Overall, I am glad I opted to work on this project, and I feel I have a lot better understanding of Front End design as a whole.
