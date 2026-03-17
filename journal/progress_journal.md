@@ -67,3 +67,7 @@ I used a couple of sources for regex in the JavaScript, as listed below:
 ### Final thoughts
 
 I noticed after I had "finished" that there was a small problem with some overflow on the projects section, but honestly, at this point I have run out of time. I have other finals and projects that need my attention. If this was a work project, that would be my very next fix. Additionally, there may be some sections where my CSS could be more efficient, but I ran out of time to refactor. Overall, I am glad I opted to work on this project, and I feel I have a lot better understanding of Front End design as a whole.
+
+## Link to Final Project Video
+
+https://media.pdx.edu/media/t/1_xyuitbbf
